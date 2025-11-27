@@ -1,34 +1,25 @@
-import CategoryContainer from "./components/categories-container/categories-container.component";
-function App() {
-    const categories = [
-    {
-      id: 1,
-      title: "Bollería Dulce",
-      img: "./images/dulce.png",
-    },
-    {
-      id: 2,
-      title: "Bollería Salada",
-      img: "./images/salada.png",
-    },
-    {
-      id: 3,
-      title: "Panadería Industrial",
-      img: "./images/panaderia.png",
-    },
-    {
-      id: 4,
-      title: "Productos de Temporada",
-      img: "./images/temporada.png",
-    },
-    {
-      id: 5,
-      title: "Productos Especiales",
-      img: "./images/especiales.png",
-    },
-  ];
+import { Route, Routes } from "react-router-dom";
+import Home from "./routes/home/home.component";
+import Navigation from "./components/navigation/navigations.component";
 
-  return <CategoryContainer categories= {categories}/>;
-}
+const Shop = () => {
+  return (
+    <div className="shop-page">
+      <h1>Tienda</h1>
+      <p>¡Bienvenido a nuestra sección de productos!</p>
+    </div>
+  );
+};
+
+const App = () => {
+  return (
+    <Routes>
+      <Route path="/" element={<Navigation />}>
+        <Route index element={<Home />}></Route>
+        <Route path="shop" element={<Shop />}></Route>
+      </Route>
+    </Routes>
+  );
+};
 
 export default App;
