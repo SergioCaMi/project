@@ -15,9 +15,17 @@ const SignIn = () => {
   // Más simple y directo. Abre una ventana emergente de Google.
   // Retorna inmediatamente el usuario autenticado.
   const logGoogleUser = async () => {
-    const { user } = await signInWithGooglePopup();
-    await createUserDocumentFromAuth(user);
-    console.log("Usuario con popup:", user);
+    try {
+      const { user } = await signInWithGooglePopup();
+      await createUserDocumentFromAuth(user);
+      console.log("Usuario con popup:", user);
+    } catch (error) {
+      if (error.code === 'auth/popup-closed-by-user') {
+        console.log('Usuario cerró el popup de autenticación');
+      } else {
+        console.error('Error al autenticar:', error);
+      }
+    }
   };
 
   // ============ MÉTODO 2: REDIRECT ============
