@@ -97,7 +97,7 @@ export const createUserDocumentFromAuth = async (userAuth, additionalInformation
   // usando el UID del usuario como ID del documento
   // Estructura: /users/{uid}
   const userDocRef = doc(db, "users", userAuth.uid);
-  console.log(userDocRef);
+//   console.log(userDocRef);
   
   // getDoc: Intenta leer el documento para verificar si ya existe
   const userSnapshot = await getDoc(userDocRef);

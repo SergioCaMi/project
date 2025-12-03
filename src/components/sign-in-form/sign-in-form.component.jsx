@@ -5,8 +5,8 @@
 //   1. Email y contraseña
 //   2. Cuenta de Google (popup)
 
-import { useState } from 'react';
-
+import { useState, useContext } from 'react';
+import { UserContext } from '../../components/context/user.context';
 // IMPORTACIONES DE COMPONENTES
 import FormInput from '../form-input/form-input.component';
 import Button from '../button/button.component';
@@ -39,6 +39,9 @@ const SignInForm = () => {
   const [formFields, setFormFields] = useState(defaultFormFields);
   const { email, password } = formFields;
 
+
+  // Para usar el contexto
+const { setCurrentUser } = useContext(UserContext);
   // =====================================================
   // FUNCIÓN: RESETEAR FORMULARIO
   // =====================================================
@@ -63,7 +66,8 @@ const SignInForm = () => {
       // Guardamos/actualizamos los datos del usuario en Firestore
       // Si es la primera vez, crea el documento. Si ya existe, no hace nada.
       await createUserDocumentFromAuth(user);
-      
+            setCurrentUser(user);
+
     } catch (error) {
       // MANEJO DE ERRORES
       // Si el usuario cierra el popup, no mostramos error (es acción intencional)
@@ -88,11 +92,11 @@ const SignInForm = () => {
     try {
       // Intenta autenticar al usuario con email y password
       // Retorna un objeto con información del usuario si es exitoso
-      const response = await signInAuthUserWithEmailAndPassword(
+      const {user} = await signInAuthUserWithEmailAndPassword(
         email,
         password
       );
-      console.log(response);
+      setCurrentUser(user);
       
       // Si llegamos aquí, el inicio de sesión fue exitoso
       resetFormFields();

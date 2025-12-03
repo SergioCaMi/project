@@ -4,8 +4,8 @@
 // Este componente permite a los usuarios crear una nueva cuenta
 // con email, password y nombre de usuario
 
-import { useState } from "react";
-
+import { useState, useContext } from "react";
+import { UserContext } from "../../components/context/user.context";
 // IMPORTACIONES DE FIREBASE
 // createUserWithEmailAndPasswordFunction: Crea usuario en Firebase Auth
 // createUserDocumentFromAuth: Guarda datos adicionales del usuario en Firestore
