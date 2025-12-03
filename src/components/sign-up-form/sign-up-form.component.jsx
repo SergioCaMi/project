@@ -12,7 +12,7 @@ import { UserContext } from "../../components/context/user.context";
 import {
   createUserWithEmailAndPasswordFunction,
   createUserDocumentFromAuth,
-} from "../../utils/firebase/firebase.utils";
+} from "../../utils/firebase/firebase.utils.bckup";
 
 // IMPORTACIONES DE COMPONENTES
 import FormInput from "../form-input/form-input.component";
@@ -41,6 +41,8 @@ const SignUpForm = () => {
   // Desestructuramos los campos para acceso más fácil
   const { displayName, email, password, confirmPassword } = formFields;
 
+
+  const { setCurrentUser } = useContext(UserContext);
   // =====================================================
   // FUNCIÓN: RESETEAR FORMULARIO
   // =====================================================
@@ -76,13 +78,14 @@ const SignUpForm = () => {
         email,
         password
       );
-      
+      setCurrentUser(user);
       // PASO 2: Crear documento del usuario en Firestore
       // Guardamos el displayName adicional porque Auth solo guarda email/password
       await createUserDocumentFromAuth(user, { displayName });
       
       // Si llegamos aquí, el registro fue exitoso
       // El formulario se reseteará automáticamente
+      resetFormFields();
       
     } catch (error) {
       // MANEJO DE ERRORES
@@ -94,7 +97,6 @@ const SignUpForm = () => {
         console.log("Error al crear el usuario", error);
       }
       // Limpiamos el formulario en caso de error
-      resetFormFields();
     }
   };
 

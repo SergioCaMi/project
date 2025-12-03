@@ -1,13 +1,17 @@
 import { Outlet, Link } from "react-router-dom";
 import { Fragment, useContext } from "react";
 import { UserContext } from "../../components/context/user.context";
+import { signOutUser } from "../../utils/firebase/firebase.utils";
 // import {ReactComponent as Logo} from '../../assets/crown.svg'; => unicamente con archivos .svg
 import logoSrc from "../../assets/logo.png";
 import "./navigations.styles.scss";
 
 const Navigation = () => {
-  const { currentUser } = useContext(UserContext);
-  // console.log("Usuario actual en Navigation:", currentUser);
+  const { currentUser, setCurrentUser } = useContext(UserContext);
+  const signOutHandler = async () => {
+    await signOutUser();
+    setCurrentUser(null);
+  };
   return (
     <Fragment>
       <div className="navigation">
@@ -22,9 +26,16 @@ const Navigation = () => {
           <Link className="nav-link" to="/contact">
             CONTACTO
           </Link>
-          <Link className="nav-link" to="/auth">
-            Iniciar Sesión
-          </Link>
+
+          {currentUser ? (
+            <span className="nav-link" onClick={signOutHandler}>
+              Cerrar Sesión
+            </span>
+          ) : (
+            <Link className="nav-link" to="/auth">
+              Iniciar Sesión
+            </Link>
+          )}
         </div>
       </div>
       <Outlet />
