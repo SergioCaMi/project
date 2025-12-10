@@ -5,6 +5,8 @@ import { signOutUser } from "../../utils/firebase/firebase.utils";
 // import {ReactComponent as Logo} from '../../assets/crown.svg'; => unicamente con archivos .svg
 import logoSrc from "../../assets/logo.png";
 import "./navigations.styles.scss";
+import CartIcon from "../../components/cart-icon/cart-icon.component.jsx";
+import CartDropdown from "../../components/cart-dropdown/cart-dropdown.component.jsx";
 
 const Navigation = () => {
   const { currentUser } = useContext(UserContext);
@@ -17,7 +19,7 @@ const Navigation = () => {
           <img src={logoSrc} alt="Logo" className="logo" />
         </Link>
         <div className="nav-links-container">
-          <Link className="nav-link" to="/">
+          <Link className="nav-link" to="/shop">
             TIENDA
           </Link>
           <Link className="nav-link" to="/contact">
@@ -33,7 +35,9 @@ const Navigation = () => {
               Iniciar Sesión
             </Link>
           )}
+          <CartIcon />
         </div>
+        <CartDropdown/>
       </div>
       <Outlet />
     </Fragment>

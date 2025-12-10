@@ -1,0 +1,181 @@
+[
+  {
+    "id": 1,
+    "name": "Croissant de mantequilla",
+    "category": "Bollería Dulce",
+    "imageUrl": "https://pastelerialaoriental1950.com/wp-content/uploads/2020/11/Diseno-sin-titulo-25-1-1024x768.jpg",
+    "price": 1.50
+  },
+  {
+    "id": 2,
+    "name": "Napolitana de crema",
+    "category": "Bollería Dulce",
+    "imageUrl": "https://dispafred.es/wp-content/uploads/2024/01/napolitana-jamon-dulce-300x300.png",
+    "price": 1.80
+  },
+  {
+    "id": 3,
+    "name": "Magdalena clásica",
+    "category": "Bollería Dulce",
+    "imageUrl": "https://pastelerialaoriental1950.com/wp-content/uploads/2020/12/Diseno-sin-titulo-46-1-1024x1024.jpg",
+    "price": 1.20
+  },
+  {
+    "id": 4,
+    "name": "Ensaimada tradicional",
+    "category": "Bollería Dulce",
+    "imageUrl": "https://www.pasteleriaybolleriamoreno.com/wp-content/uploads/2024/08/dulce-ensaimada-caja.jpg",
+    "price": 2.50
+  },
+  {
+    "id": 5,
+    "name": "Palmera de chocolate",
+    "category": "Bollería Dulce",
+    "imageUrl": "https://www.pasteleriaybolleriamoreno.com/wp-content/uploads/2024/08/dulce-croissant-choco-caja.jpg",
+    "price": 2.00
+  },
+
+  {
+    "id": 6,
+    "name": "Croissant de jamón y queso",
+    "category": "Bollería Salada",
+    "imageUrl": "https://tienda.bouquet-pasteleria.es/cdn/shop/files/Croissant-JamonYork-Queso-2-22.jpg?v=1729097239",
+    "price": 2.20
+  },
+  {
+    "id": 7,
+    "name": "Empanada de atún",
+    "category": "Bollería Salada",
+    "imageUrl": "https://panamarbakery.com/public/Image/2021/6/napolitana-york-y-queso_Grande.jpg",
+    "price": 2.50
+  },
+  {
+    "id": 8,
+    "name": "Napolitana de sobrasada",
+    "category": "Bollería Salada",
+    "imageUrl": "https://imag.bonviveur.com/napolitanas-de-jamon-y-queso.jpg",
+    "price": 2.30
+  },
+  {
+    "id": 9,
+    "name": "Focaccia con romero",
+    "category": "Bollería Salada",
+    "imageUrl": "https://static.bainet.es/clip/d1894c29-fe39-47d6-8d72-c89003971a16_source-aspect-ratio_1600w_0.jpg",
+    "price": 2.00
+  },
+  {
+    "id": 10,
+    "name": "Mini pizza individual",
+    "category": "Bollería Salada",
+    "imageUrl": "https://static.bainet.es/clip/6f160a22-6eb9-44f1-88fe-0a3d6ec64221_source-aspect-ratio_1600w_0.jpg",
+    "price": 3.00
+  },
+
+  {
+    "id": 11,
+    "name": "Pan de molde integral",
+    "category": "Panadería Industrial",
+    "imageUrl": "https://elatelierdediegocaride.com/1185-large_default/pan-de-molde-integral-de-elaboracion-propia.jpg",
+    "price": 2.00
+  },
+  {
+    "id": 12,
+    "name": "Barra de pan rústico",
+    "category": "Panadería Industrial",
+    "imageUrl": "https://s2.elespanol.com/2021/03/26/actualidad/568955910_176592662_1024x576.jpg",
+    "price": 1.80
+  },
+  {
+    "id": 13,
+    "name": "Baguette clásica",
+    "category": "Panadería Industrial",
+    "imageUrl": "https://m.media-amazon.com/images/I/719IH2ZBDfL.jpg",
+    "price": 1.50
+  },
+  {
+    "id": 14,
+    "name": "Chapata con aceite",
+    "category": "Panadería Industrial",
+    "imageUrl": "https://www.pan-filio.com/cdn/shop/files/baguettepanfilio2.jpg?v=1742004147&width=533",
+    "price": 2.20
+  },
+  {
+    "id": 15,
+    "name": "Pan de molde blanco",
+    "category": "Panadería Industrial",
+    "imageUrl": "https://elatelierdediegocaride.com/573-large_default/pan-de-molde-artesano.jpg",
+    "price": 1.90
+  },
+
+  {
+    "id": 16,
+    "name": "Roscón de Reyes clásico",
+    "category": "Productos de Temporada",
+    "imageUrl": "https://www.decaramelo.es/231-large_default/roscon-de-reyes-grande-10.jpg",
+    "price": 12.00
+  },
+  {
+    "id": 17,
+    "name": "Turrón blando de Jijona",
+    "category": "Productos de Temporada",
+    "imageUrl": "https://excelenciasgourmet.com/sites/default/files/inline-images/dulces-navidad-mazapanes.jpg",
+    "price": 8.50
+  },
+  {
+    "id": 18,
+    "name": "Polvorones tradicionales",
+    "category": "Productos de Temporada",
+    "imageUrl": "https://parafarmaciaeliben.es/wp-content/uploads/2022/03/Portada-Blog-Polvorones.png",
+    "price": 5.00
+  },
+  {
+    "id": 19,
+    "name": "Mazapán de almendra",
+    "category": "Productos de Temporada",
+    "imageUrl": "https://www.7canibales.com/wp-content/uploads/sites/2/2024/12/La-Rondena-Antequera-min-820x1024.webp",
+    "price": 6.00
+  },
+  {
+    "id": 20,
+    "name": "Panettone italiano",
+    "category": "Productos de Temporada",
+    "imageUrl": "https://elblogdeceleste.com/wp-content/uploads/2019/12/dulces-naviden%CC%83os9D813604-BBC1-4DDC-B9E9-945AA77B4237_1_105_c.jpg",
+    "price": 10.00
+  },
+
+  {
+    "id": 21,
+    "name": "Tarta Selva Negra",
+    "category": "Productos Especiales",
+    "imageUrl": "https://celilocos.com/wp-content/uploads/2020/02/selva-negra-300x300.jpg",
+    "price": 18.00
+  },
+  {
+    "id": 22,
+    "name": "Brazo de gitano de crema",
+    "category": "Productos Especiales",
+    "imageUrl": "https://www.guiarepsol.com/es/wp-content/uploads/2021/04/brazo-de-gitano.jpg",
+    "price": 15.00
+  },
+  {
+    "id": 23,
+    "name": "Cheesecake de frutos rojos",
+    "category": "Productos Especiales",
+    "imageUrl": "https://www.guiarepsol.com/es/wp-content/uploads/2021/04/cheesecake.jpg",
+    "price": 16.00
+  },
+  {
+    "id": 24,
+    "name": "Milhojas de nata",
+    "category": "Productos Especiales",
+    "imageUrl": "https://camilodeblas.es/confiteria/tartas/",
+    "price": 14.00
+  },
+  {
+    "id": 25,
+    "name": "Tarta de Santiago",
+    "category": "Productos Especiales",
+    "imageUrl": "https://www.guiarepsol.com/es/wp-content/uploads/2021/04/tarta-santiago.jpg",
+    "price": 17.00
+  }
+]

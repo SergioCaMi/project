@@ -1,0 +1,85 @@
+/* ==================================== */
+/* Archivo: _contact.scss (Modular)     */
+/* ==================================== */
+
+// 1. Variables de Diseño
+// Centraliza colores, tamaños y tipografía para fácil mantenimiento
+$primary-blue: #0077b6; // Azul corporativo
+$text-dark: #2a2a2a;
+$background-white: #ffffff;
+$section-padding: 60px;
+$breakpoint-mobile: 768px;
+
+.contact-page {
+  // 2. Estilos del Contenedor Principal
+  width: 100%;
+  max-width: 1000px;
+  margin: 25px auto; // Similar al `margin-bottom: 25px` de la navegación
+  padding: $section-padding / 2;
+  background-color: $background-white;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); // Sombra más pronunciada
+
+  // 3. Estilos de la Cabecera (Similar a un contenedor de elementos)
+  .header-container {
+    // Usamos flexbox para centrar o distribuir, aunque aquí es solo un título
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0; // Separador sutil
+
+    // Título Principal
+    h1 {
+      font-size: 2.2rem;
+      color: $primary-blue;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  }
+
+  // 4. Estilos del Cuerpo del Mensaje
+  .message-container {
+    
+    // Párrafo de bienvenida
+    p {
+      font-size: 1.1rem;
+      color: $text-dark;
+      line-height: 1.7;
+      margin-bottom: 20px; // Espacio inferior para separación
+    }
+    
+    // Si tuvieras un CTA (Call to Action)
+    .cta-link {
+        // Estilo similar a '.nav-link'
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: $primary-blue;
+        color: $background-white;
+        text-decoration: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: darken($primary-blue, 10%);
+        }
+    }
+  }
+
+  // 5. Media Query para Responsividad
+  @media (max-width: $breakpoint-mobile) {
+    margin: 15px; // Reducir el margen en móviles
+    padding: $section-padding / 4; // Reducir el padding interno
+
+    .header-container {
+        h1 {
+            font-size: 1.8rem;
+        }
+    }
+    
+    .message-container p {
+        font-size: 1rem;
+    }
+  }
+}
