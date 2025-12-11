@@ -26,4 +26,28 @@
   button {
     margin-top: auto;
   }
+
+  // Responsivo para móviles
+  @media (max-width: 768px) {
+    width: 90%;
+    right: 5%;
+    left: 5%;
+    top: 70px;
+  }
+
+  @media (max-width: 480px) {
+    width: 95%;
+    right: 2.5%;
+    left: 2.5%;
+    height: 300px;
+    padding: 15px;
+
+    .cart-items {
+      height: 200px;
+    }
+
+    .empty-message {
+      font-size: 16px;
+    }
+  }
 }

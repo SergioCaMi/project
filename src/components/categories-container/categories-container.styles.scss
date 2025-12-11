@@ -3,4 +3,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  // Responsivo para móviles
+  @media (max-width: 768px) {
+    padding: 0 10px;
+  }
 }

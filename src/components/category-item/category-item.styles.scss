@@ -65,4 +65,33 @@
       font-size: 16px;
     }
   }
+
+  // Responsivo para móviles
+  @media (max-width: 768px) {
+    min-width: 100%;
+    height: 200px;
+    margin: 0 0 15px 0;
+
+    &.large {
+      height: 250px;
+    }
+
+    &:first-child,
+    &:last-child {
+      margin: 0 0 15px 0;
+    }
+
+    .category-body-container {
+      height: 70px;
+      padding: 0 15px;
+
+      h2 {
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
 }

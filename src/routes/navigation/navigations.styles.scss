@@ -30,6 +30,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
+  padding: 0 15px;
 
   .logo-container {
     height: 100%;
@@ -52,6 +53,40 @@
     .nav-link {
       padding: 10px 15px;
       cursor: pointer;
+    }
+  }
+
+  // Responsivo para móviles
+  @media (max-width: 768px) {
+    height: 60px;
+    padding: 0 10px;
+
+    .logo-container {
+      width: 50px;
+      padding: 15px 5px;
+
+      .logo {
+        width: 200%;
+        height: 200%;
+      }
+    }
+
+    .nav-links-container {
+      width: auto;
+
+      .nav-link {
+        padding: 8px 10px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .nav-links-container {
+      .nav-link {
+        padding: 8px 6px;
+        font-size: 12px;
+      }
     }
   }
 }
