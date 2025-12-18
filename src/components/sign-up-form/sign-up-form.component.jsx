@@ -11,7 +11,7 @@ import { useState } from "react";
 import {
   createUserWithEmailAndPasswordFunction,
   createUserDocumentFromAuth,
-} from "../../utils/firebase/firebase.utils.bckup";
+} from "../../utils/firebase/firebase.utils";
 
 // IMPORTACIONES DE COMPONENTES
 import FormInput from "../form-input/form-input.component";

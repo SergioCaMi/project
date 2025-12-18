@@ -16,16 +16,16 @@ const Checkout = () => {
           <span>Product</span>
         </div>
         <div className='header-block'>
-          <span>Description</span>
+          <span>Descripción</span>
         </div>
         <div className='header-block'>
-          <span>Quantity</span>
+          <span>Cantidad</span>
         </div>
         <div className='header-block'>
-          <span>Price</span>
+          <span>Precio</span>
         </div>
         <div className='header-block'>
-          <span>Remove</span>
+          <span>Eliminar</span>
         </div>
       </div>
       {cartItems.map((cartItem) => (

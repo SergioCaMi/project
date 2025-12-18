@@ -19,7 +19,7 @@ import {
   signInWithGooglePopup,
   createUserDocumentFromAuth,
   signInAuthUserWithEmailAndPassword,
-} from '../../utils/firebase/firebase.utils.bckup';
+} from '../../utils/firebase/firebase.utils';
 
 import './sign-in-form.styles.scss';
 
